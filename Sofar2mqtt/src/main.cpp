@@ -43,13 +43,7 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
 // The device name is used as the MQTT base topic. If you need more than one Sofar2mqtt on your network, give them unique names.
 const char* deviceName = "Sofar2mqtt";
 const char* version = "v2.0b1";
-
-#define WIFI_SSID	"***REMOVED***"
-#define WIFI_PASSWORD	"***REMOVED***"
-#define MQTT_SERVER	"***REMOVED***"
-#define MQTT_PORT	1883
-#define MQTT_USERNAME	"***REMOVED***"			// Empty string for none.
-#define MQTT_PASSWORD	"***REMOVED***"
+#include <secrets.h>
 
 /*****
 Sofar2mqtt is a remote control interface for Sofar solar and battery inverters.
